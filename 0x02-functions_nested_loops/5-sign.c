@@ -1,20 +1,24 @@
-#include "main.h"
+#include "holberton.h"
 /**
- * main - print _putchar
- * is written by mbah
- * Return: 0
+ * print_sign - a function that prints the sign of a number
+ * @n: number input
+ * Return: 1 prints '+' if n > 0, 0 prints '0' if n = 0, -1 prints '-' if n < 0
  */
-
-int main(void)
+int print_sign(int n)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
-return (0);
+	if (n > 0)
+	{
+		_putchar ('+');
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar ('0');
+		return (0);
+	}
+	else
+	{
+		_putchar ('-');
+		return (-1);
+	}
 }
