@@ -1,33 +1,15 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_diagonal -  checks for checks for a digit (0 through 9).
- * @n: n -  Variable
+ * main - check the code
  *
  * Return: Always 0.
  */
-void print_diagonal(int n)
+int main(void)
 {
-int x, y;
-
-if (n > 0)
-{
-for (x = 1; x <= n; x++)
-{
-for (y = 1; y <= n; y++)
-{
-if (x == y)
-{
-_putchar(92);
-break;
-}
-_putchar(' ');
-}
-putchar('\n');
-}
-}
-else
-{
-_putchar('\n');
-}
+print_diagonal(0);
+print_diagonal(2);
+print_diagonal(10);
+print_diagonal(-4);
+return (0);
 }
