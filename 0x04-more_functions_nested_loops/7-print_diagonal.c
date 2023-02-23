@@ -1,28 +1,33 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_diagonal - draws a diagonal line on the terminal
- * @n: number of times the character \ should be printed
+ * print_diagonal -  checks for checks for a digit (0 through 9).
+ * @n: n -  Variable
+ *
+ * Return: Always 0.
  */
 void print_diagonal(int n)
 {
-if (n <= 0)
+int x, y;
+
+if (n > 0)
 {
-_putchar('\n');
+for (x = 1; x <= n; x++)
+{
+for (y = 1; y <= n; y++)
+{
+if (x == y)
+{
+_putchar(92);
+break;
+}
+_putchar(' ');
+}
+putchar('\n');
+}
 }
 else
 {
-int i, j;
-
-for (i = 0; i < n; i++)
-{
-for (j = 0; j < n; j++)
-{
-if (j == i)
-_putchar('\\');
-else if (j < i)
-_putchar(' ');
-}
 _putchar('\n');
 }
 }
