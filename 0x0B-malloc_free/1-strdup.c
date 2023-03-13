@@ -1,5 +1,5 @@
-#include <stdlib.h>
-#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h">
 
 /**
  * *_strdup - copies the string given as parameter
