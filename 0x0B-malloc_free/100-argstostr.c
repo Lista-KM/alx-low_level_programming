@@ -1,5 +1,7 @@
+#include "main.h"
+
 #include <stdlib.h>
-#include "holberton.h"
+
 
 /**
 * *argstostr - concatenates all the arguments of the program
@@ -40,6 +42,6 @@ k++;
 str[k] = '\n';
 k++;
 }
-	
+
 return (str);
 }
