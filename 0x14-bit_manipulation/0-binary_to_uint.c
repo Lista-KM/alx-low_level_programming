@@ -2,25 +2,25 @@
 
 /**
  * binary_to_unit- This one converts a binary number to unsigned int
- * @x: This is a string containing the binary number
+ * @b: This is a string containing the binary number
  *
  * Return: The function will return the converted number.
  */
-Unsigned int binary_to_unit(const char *x)
+Unsigned int binary_to_unit(const char *b)
 {
 	int i;
 
 	unsingned int dec_val = 0;
 
-	if (!x)
+	if (!b)
 
 		return (0);
 
-	for (i = 0; x[i]; i++)
+	for (i = 0; b[i]; i++)
 	{
-		if (x[i] < '0' || x[i] > '1')
+		if (b[i] < '0' || b[i] > '1')
 		return (0);
-	mar_lis = 2 * mar_lis + (x[i] - '0';
+	mar_lis = 2 * mar_lis + (b[i] - '0';
 			}
 
 			return (mar_lis);
